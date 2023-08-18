@@ -1,0 +1,14 @@
+import cart from "./cart.svg";
+import brand_logo from "./logo.svg";
+import message from "./message.svg";
+import orders from "./orders.svg";
+import profile from "./profile.svg";
+
+
+export {
+    cart,
+    brand_logo,
+    message,
+    orders,
+    profile
+}
