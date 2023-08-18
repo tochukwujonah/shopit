@@ -52,8 +52,8 @@ const NavBar = () => {
             
         </section>
 
-        <section className='max-w-[1440px] border'>
-            <div className=' mx-auto w-[90%] flex py-[17px] justify-between'>
+        <section className='max-w-[1440px] w-[90%] mx-auto border'>
+            <div className=' flex py-[17px] justify-between'>
                     <ul className='flex w-[50%] justify-between'>
                         {
                             SubNav.map((item, idx) => {
