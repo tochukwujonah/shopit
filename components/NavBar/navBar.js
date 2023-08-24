@@ -16,7 +16,7 @@ const NavBar = () => {
                 </div>
 
                 <div className='border-2 border-[#0D6EFD] h-[40px] rounded-[5px] flex flex-2 items-center justify-between w-[50%]'>
-                    <input type="text" placeholder='Search' className='h-[100%]  px-[5px] ml-1 outline-0' />
+                    <input type="text" placeholder='Search' className='h-[100%] w-full px-[5px] ml-1 outline-0' />
 
                     <div className='flex flex-row  self-end content-end'>
                         <select name="" id="" className=' border-t-2 border-t-[#0D6EFD] border-l-[2px] border-l-[#0D6EFD] px-[5px] outline-0 ' >
@@ -25,7 +25,7 @@ const NavBar = () => {
                             <option value=""> Home interiors </option>
                         </select>
 
-                        <button className='bg-primary px-[23px] py-[px] h-[38px] rounded-r-[5px] text-white'>
+                        <button className='bg-primary px-[23px] py-[px] h-[38px]  text-white'>
                             Search
                         </button>
                     </div>
@@ -51,29 +51,31 @@ const NavBar = () => {
 
             
         </section>
-
-        <section className='max-w-[1440px] w-[90%] mx-auto border'>
-            <div className=' flex py-[17px] justify-between'>
-                    <ul className='flex w-[50%] justify-between'>
-                        {
-                            SubNav.map((item, idx) => {
-                                return (
-                                    <li key={idx} className='font-[500] '>
-                                        {item.text}
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                    <div className=''>
-                        <select name="" id="">
-                            <option value="USD">USD</option>
-                            <option value="EUR">EUR</option>
-                            <option value="EUR">Pounds</option>
-                        </select>
-                    </div>
-            </div>
+        <section className='w-full border-[1px] border-[#E0E0E0]'>
+            <section className='max-w-[1440px] w-[full] mx-auto '>
+                <div className=' flex py-[17px] justify-between'>
+                        <ul className='flex w-[50%] justify-between'>
+                            {
+                                SubNav.map((item, idx) => {
+                                    return (
+                                        <li key={idx} className='font-[500] '>
+                                            {item.text}
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                        <div className=''>
+                            <select name="" id="">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="EUR">Pounds</option>
+                            </select>
+                        </div>
+                </div>
+            </section>
         </section>
+        
         
     </nav>
   )
