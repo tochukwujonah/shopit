@@ -1,6 +1,6 @@
 
 import './globals.css'
-import NavBar from '@/components/NavBar/navBar'
+import NavBar from '@/components/molecules/NavBar/navBar'
 
 export const metadata = {
   title: 'Shop It',

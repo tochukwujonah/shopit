@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { brand_logo } from '../../public/assets/icons';
+import { brand_logo } from '../../../public/assets/icons';
 import { UserProfile, SubNav } from '@/app/api/data/nav.data';
 
 const NavBar = () => {
